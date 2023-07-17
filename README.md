@@ -27,10 +27,10 @@ Use Amazon RDS to provision and manage your PostgreSQL database. This ensures be
 Configure Multi-AZ deployment for database redundancy across multiple availability zones.
 
 
-Step 5: Content Storage
+Step 5: Backup and Recovery
 
-Store static assets (CSS, JavaScript, images) in an Amazon S3 bucket. This offloads the load on your application instances and allows for efficient content delivery.
-
+Set up an Amazon S3 bucket to store backups of your database. Configure regular automated backups and retain them for a desired period.
+Implement a backup and recovery strategy using tools like AWS Database Migration Service or pg_dump for PostgreSQL.
 
 Step 6: Continuous Integration and Deployment
 
@@ -48,13 +48,7 @@ Create a disaster recovery plan by configuring regular backups and enabling poin
 Implement a process for regularly testing the recovery of your application and data to ensure its effectiveness.
 
 
-Step 9: Monitoring and Alerting
-
-Enable CloudWatch to monitor your application's performance, including metrics such as CPU utilization, memory usage, and network traffic.
-Set up CloudWatch alarms to trigger notifications or automated actions when specific thresholds are exceeded.
-
-
-Step 10: Performance Optimization
+Step 9: Performance Optimization
 
 Continuously monitor and optimize your application's performance. Analyze performance bottlenecks, optimize database queries, and leverage caching techniques to improve response times.
 
